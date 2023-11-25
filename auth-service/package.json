@@ -1,0 +1,26 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha tests/*.js",
+    "dev": "nodemon server.js",
+    "build": "babel src -d dist",
+    "lint": "eslint .",
+    "prestart": "npm install",
+    "poststart": "echo 'Server started successfully'",
+    "pretest": "echo 'Running tests...'",
+    "posttest": "echo 'Tests complete'"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "body-parser": "^1.19.0",
+    "bcrypt": "^5.0.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
